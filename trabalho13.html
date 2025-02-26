@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Show do Provão</title>
+</head>
+<body>
+    <img src="Show do Provão logo.png" alt="logo">
+    <h1>13ª Pergunta:</h1>
+    <div class="question">
+        <p>Qual o papel da Guarda Nacional na repressão à Sabinada?</p>
+        <div class="option">
+            <label>
+                <input type="radio" name="resposta13" value="a">
+                -
+            </label><br>
+            <label>
+                <input type="radio" name="resposta13" value="b">
+                -
+            </label><br>
+            <label>
+                <input type="radio" name="resposta13" value="c">
+                -
+            </label><br>
+            <label>
+                <input type="radio" name="resposta13" value="d">
+                -
+            </label>
+        </div>
+    <br>
+</div>
+    <div class="result-message" id="resultMessage13" style="display: none;"></div>
+    <div class="submit-btn">
+        <button class="botao" type="submit" onclick="checkAnswer()">Enviar</button></a>
+    </div>
+
+    <script>
+    function checkAnswer(){
+        var answer13 = document.querySelector('input[name="resposta13"]:checked');
+        var resultMessage13 = document.getElementById('resultMessage13');
+        var resposta13 = document.getElementById('resposta13');
+        if (answer13 && answer13.value==="x"){
+            resultMessage13.style.display="block";
+            window.location.replace("respostaCerta.html");
+        } else{
+            resultMessage13.style.display="block";
+            window.location.replace("respostaErrada.html");
+        }
+    }
+    </script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Show do Provão</title>
+</head>
+<body>
+    <img src="Show do Provão logo.png" alt="logo">
+    <h1>10ª Pergunta:</h1>
+    <div class="question">
+        <p>De que maneira a falta de uma pauta abolicionista na Sabinada reflete a relação ambígua entre os movimentos de contestação e a instituição da escravidão no Brasil durante o século XIX?</p>
+        <div class="option">
+            <label>
+                <input type="radio" name="resposta10" value="a">
+                -
+            </label><br>
+            <label>
+                <input type="radio" name="resposta10" value="b">
+                -
+            </label><br>
+            <label>
+                <input type="radio" name="resposta10" value="c">
+                -
+            </label><br>
+            <label>
+                <input type="radio" name="resposta10" value="d">
+                -
+            </label>
+        </div>
+    <br>
+</div>
+    <div class="result-message" id="resultMessage10" style="display: none;"></div>
+    <div class="submit-btn">
+        <button class="botao" type="submit" onclick="checkAnswer()">Enviar</button></a>
+    </div>
+
+    <script>
+    function checkAnswer(){
+        var answer10 = document.querySelector('input[name="resposta10"]:checked');
+        var resultMessage10 = document.getElementById('resultMessage10');
+        var resposta10 = document.getElementById('resposta10');
+        if (answer10 && answer10.value==="x"){
+            resultMessage10.style.display="block";
+            window.location.replace("respostaCerta.html");
+        } else{
+            resultMessage10.style.display="block";
+            window.location.replace("respostaErrada.html");
+        }
+    }
+    </script>
+</body>
+</html>

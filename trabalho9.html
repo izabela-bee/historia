@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Show do Provão</title>
+</head>
+<body>
+    <img src="Show do Provão logo.png" alt="logo">
+    <h1>9ª Pergunta:</h1>
+    <div class="question">
+        <p>Qual foi a postura dos líderes da Sabinada em relação à escravidão?</p>
+        <div class="option">
+            <label>
+                <input type="radio" name="resposta9" value="a">
+                -
+            </label><br>
+            <label>
+                <input type="radio" name="resposta9" value="b">
+                -
+            </label><br>
+            <label>
+                <input type="radio" name="resposta9" value="c">
+                -
+            </label><br>
+            <label>
+                <input type="radio" name="resposta9" value="d">
+                -
+            </label>
+        </div>
+    <br>
+</div>
+    <div class="result-message" id="resultMessage9" style="display: none;"></div>
+    <div class="submit-btn">
+        <button class="botao" type="submit" onclick="checkAnswer()">Enviar</button></a>
+    </div>
+
+    <script>
+    function checkAnswer(){
+        var answer9 = document.querySelector('input[name="resposta9"]:checked');
+        var resultMessage9 = document.getElementById('resultMessage9');
+        var resposta9 = document.getElementById('resposta9');
+        if (answer9 && answer9.value==="x"){
+            resultMessage9.style.display="block";
+            window.location.replace("respostaCerta.html");
+        } else{
+            resultMessage9.style.display="block";
+            window.location.replace("respostaErrada.html");
+        }
+    }
+    </script>
+</body>
+</html>

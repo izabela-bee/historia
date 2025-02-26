@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Show do Provão</title>
+</head>
+<body>
+    <img src="Show do Provão logo.png" alt="logo">
+    <h1>15ª Pergunta:</h1>
+    <div class="question">
+        <p>Como a derrota da Sabinada e a repressão subsequente afetaram o movimento republicano no Brasil e a relação das províncias com o governo central?</p>
+        <div class="option">
+            <label>
+                <input type="radio" name="resposta15" value="a">
+                -
+            </label><br>
+            <label>
+                <input type="radio" name="resposta15" value="b">
+                -
+            </label><br>
+            <label>
+                <input type="radio" name="resposta15" value="c">
+                -
+            </label><br>
+            <label>
+                <input type="radio" name="resposta15" value="d">
+                -
+            </label>
+        </div>
+    <br>
+</div>
+    <div class="result-message" id="resultMessage15" style="display: none;"></div>
+    <div class="submit-btn">
+        <button class="botao" type="submit" onclick="checkAnswer()">Enviar</button></a>
+    </div>
+
+    <script>
+    function checkAnswer(){
+        var answer15 = document.querySelector('input[name="resposta15"]:checked');
+        var resultMessage15 = document.getElementById('resultMessage15');
+        var resposta15 = document.getElementById('resposta15');
+        if (answer15 && answer15.value==="x"){
+            resultMessage15.style.display="block";
+            window.location.replace("respostaCerta.html");
+        } else{
+            resultMessage15.style.display="block";
+            window.location.replace("respostaErrada.html");
+        }
+    }
+    </script>
+</body>
+</html>

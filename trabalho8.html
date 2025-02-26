@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Show do Provão</title>
+</head>
+<body>
+    <img src="Show do Provão logo.png" alt="logo">
+    <h1>8ª Pergunta:</h1>
+    <div class="question">
+        <p>Quais as implicações políticas e sociais da não adesão das camadas populares, da elite e da classe proprietária de terras ao movimento, e como isso impactou o desenrolar dos eventos?</p>
+        <div class="option">
+            <label>
+                <input type="radio" name="resposta8" value="a">
+                -
+            </label><br>
+            <label>
+                <input type="radio" name="resposta8" value="b">
+                -
+            </label><br>
+            <label>
+                <input type="radio" name="resposta8" value="c">
+                -
+            </label><br>
+            <label>
+                <input type="radio" name="resposta8" value="d">
+                -
+            </label>
+        </div>
+    <br>
+</div>
+    <div class="result-message" id="resultMessage8" style="display: none;"></div>
+    <div class="submit-btn">
+        <button class="botao" type="submit" onclick="checkAnswer()">Enviar</button></a>
+    </div>
+
+    <script>
+    function checkAnswer(){
+        var answer8 = document.querySelector('input[name="resposta8"]:checked');
+        var resultMessage8 = document.getElementById('resultMessage8');
+        var resposta8 = document.getElementById('resposta8');
+        if (answer8 && answer8.value==="x"){
+            resultMessage8.style.display="block";
+            window.location.replace("respostaCerta.html");
+        } else{
+            resultMessage8.style.display="block";
+            window.location.replace("respostaErrada.html");
+        }
+    }
+    </script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Show do Provão</title>
+</head>
+<body>
+    <img src="Show do Provão logo.png" alt="logo">
+    <h1>7ª Pergunta:</h1>
+    <div class="question">
+        <p>A elite baiana apoiou ou não a Revolta Sabinada?</p>
+        <div class="option">
+            <label>
+                <input type="radio" name="resposta7" value="a">
+                Sim, apoiou.
+            </label><br>
+            <label>
+                <input type="radio" name="resposta7" value="b">
+                Não, não apoiou.
+            </label>
+        </div>
+    <br>
+</div>
+    <div class="result-message" id="resultMessage7" style="display: none;"></div>
+    <div class="submit-btn">
+        <button class="botao" type="submit" onclick="checkAnswer()">Enviar</button></a>
+    </div>
+
+    <script>
+    function checkAnswer(){
+        var answer7 = document.querySelector('input[name="resposta7"]:checked');
+        var resultMessage7 = document.getElementById('resultMessage7');
+        var resposta7 = document.getElementById('resposta7');
+        if (answer7 && answer7.value==="b"){
+            resultMessage7.style.display="block";
+            window.location.replace("respostaCerta.html");
+        } else{
+            resultMessage7.style.display="block";
+            window.location.replace("respostaErrada.html");
+        }
+    }
+    </script>
+</body>
+</html>

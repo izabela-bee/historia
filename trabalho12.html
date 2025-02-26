@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Show do Provão</title>
+</head>
+<body>
+    <img src="Show do Provão logo.png" alt="logo">
+    <h1>12ª Pergunta:</h1>
+    <div class="question">
+        <p>O que a figura de Francisco Sabino e a decisão de nomes importantes como João Carneiro da Silva Rego podem nos dizer sobre a composição e os objetivos da liderança da revolta?</p>
+        <div class="option">
+            <label>
+                <input type="radio" name="resposta12" value="a">
+                -
+            </label><br>
+            <label>
+                <input type="radio" name="resposta12" value="b">
+                -
+            </label><br>
+            <label>
+                <input type="radio" name="resposta12" value="c">
+                -
+            </label><br>
+            <label>
+                <input type="radio" name="resposta12" value="d">
+                -
+            </label>
+        </div>
+    <br>
+</div>
+    <div class="result-message" id="resultMessage12" style="display: none;"></div>
+    <div class="submit-btn">
+        <button class="botao" type="submit" onclick="checkAnswer()">Enviar</button></a>
+    </div>
+
+    <script>
+    function checkAnswer(){
+        var answer12 = document.querySelector('input[name="resposta12"]:checked');
+        var resultMessage12 = document.getElementById('resultMessage12');
+        var resposta12 = document.getElementById('resposta12');
+        if (answer12 && answer12.value==="x"){
+            resultMessage12.style.display="block";
+            window.location.replace("respostaCerta.html");
+        } else{
+            resultMessage12.style.display="block";
+            window.location.replace("respostaErrada.html");
+        }
+    }
+    </script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Show do Provão</title>
+</head>
+<body>
+    <img src="Show do Provão logo.png" alt="logo">
+    <h1>11ª Pergunta:</h1>
+    <div class="question">
+        <p>Quais eram as principais reivindicações das classes médias baianas durante a Sabinada?</p>
+        <div class="option">
+            <label>
+                <input type="radio" name="resposta11" value="a">
+                -
+            </label><br>
+            <label>
+                <input type="radio" name="resposta11" value="b">
+                -
+            </label><br>
+            <label>
+                <input type="radio" name="resposta11" value="c">
+                -
+            </label><br>
+            <label>
+                <input type="radio" name="resposta11" value="d">
+                -
+            </label>
+        </div>
+    <br>
+</div>
+    <div class="result-message" id="resultMessage11" style="display: none;"></div>
+    <div class="submit-btn">
+        <button class="botao" type="submit" onclick="checkAnswer()">Enviar</button></a>
+    </div>
+
+    <script>
+    function checkAnswer(){
+        var answer11 = document.querySelector('input[name="resposta11"]:checked');
+        var resultMessage11 = document.getElementById('resultMessage11');
+        var resposta11 = document.getElementById('resposta11');
+        if (answer11 && answer11.value==="x"){
+            resultMessage11.style.display="block";
+            window.location.replace("respostaCerta.html");
+        } else{
+            resultMessage11.style.display="block";
+            window.location.replace("respostaErrada.html");
+        }
+    }
+    </script>
+</body>
+</html>

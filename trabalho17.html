@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Show do Provão</title>
+</head>
+<body>
+    <img src="Show do Provão logo.png" alt="logo">
+    <h1>17ª Pergunta:</h1>
+    <div class="question">
+        <p>Por que a Sabinada é vista como uma revolta com intenções contraditórias?</p>
+        <div class="option">
+            <label>
+                <input type="radio" name="resposta17" value="a">
+                -
+            </label><br>
+            <label>
+                <input type="radio" name="resposta17" value="b">
+                -
+            </label><br>
+            <label>
+                <input type="radio" name="resposta17" value="c">
+                -
+            </label><br>
+            <label>
+                <input type="radio" name="resposta17" value="d">
+                -
+            </label>
+        </div>
+    <br>
+</div>
+    <div class="result-message" id="resultMessage17" style="display: none;"></div>
+    <div class="submit-btn">
+        <button class="botao" type="submit" onclick="checkAnswer()">Enviar</button></a>
+    </div>
+
+    <script>
+    function checkAnswer(){
+        var answer17 = document.querySelector('input[name="resposta17"]:checked');
+        var resultMessage17 = document.getElementById('resultMessage17');
+        var resposta17 = document.getElementById('resposta17');
+        if (answer17 && answer17.value==="x"){
+            resultMessage17.style.display="block";
+            window.location.replace("respostaCerta.html");
+        } else{
+            resultMessage17.style.display="block";
+            window.location.replace("respostaErrada.html");
+        }
+    }
+    </script>
+</body>
+</html>
