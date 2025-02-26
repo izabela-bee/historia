@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Show do Provão</title>
+</head>
+<body>
+    <img src="Show do Provão logo.png" alt="logo">
+    <h1>5ª Pergunta:</h1>
+    <div class="question">
+        <p>Como a economia baiana e o enfraquecimento da economia açucareira afetaram o movimento de contestação liderado pelas classes médias baianas?</p>
+        <div class="option">
+            <label>
+                <input type="radio" name="resposta5" value="a">
+                -
+            </label><br>
+            <label>
+                <input type="radio" name="resposta5" value="b">
+                -
+            </label><br>
+            <label>
+                <input type="radio" name="resposta5" value="c">
+                -
+            </label><br>
+            <label>
+                <input type="radio" name="resposta5" value="d">
+                -
+            </label>
+        </div>
+    <br>
+</div>
+    <div class="result-message" id="resultMessage5" style="display: none;"></div>
+    <div class="submit-btn">
+        <button class="botao" type="submit" onclick="checkAnswer()">Enviar</button></a>
+    </div>
+
+    <script>
+    function checkAnswer(){
+        var answer5 = document.querySelector('input[name="resposta5"]:checked');
+        var resultMessage5 = document.getElementById('resultMessage5');
+        var resposta5 = document.getElementById('resposta5');
+        if (answer5 && answer5.value==="x"){
+            resultMessage5.style.display="block";
+            window.location.replace("respostaCerta.html");
+        } else{
+            resultMessage5.style.display="block";
+            window.location.replace("respostaErrada.html");
+        }
+    }
+    </script>
+</body>
+</html>

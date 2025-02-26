@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Show do Provão</title>
+</head>
+<body>
+    <img src="Show do Provão logo.png" alt="logo">
+    <h1>6ª Pergunta:</h1>
+    <div class="question">
+        <p>Como a renúncia de Padre Feijó influenciou o início da revolta?</p>
+        <div class="option">
+            <label>
+                <input type="radio" name="resposta6" value="a">
+                -
+            </label><br>
+            <label>
+                <input type="radio" name="resposta6" value="b">
+                -
+            </label><br>
+            <label>
+                <input type="radio" name="resposta6" value="c">
+                -
+            </label><br>
+            <label>
+                <input type="radio" name="resposta6" value="d">
+                -
+            </label>
+        </div>
+    <br>
+</div>
+    <div class="result-message" id="resultMessage6" style="display: none;"></div>
+    <div class="submit-btn">
+        <button class="botao" type="submit" onclick="checkAnswer()">Enviar</button></a>
+    </div>
+
+    <script>
+    function checkAnswer(){
+        var answer6 = document.querySelector('input[name="resposta6"]:checked');
+        var resultMessage6 = document.getElementById('resultMessage6');
+        var resposta6 = document.getElementById('resposta6');
+        if (answer6 && answer6.value==="x"){
+            resultMessage6.style.display="block";
+            window.location.replace("respostaCerta.html");
+        } else{
+            resultMessage6.style.display="block";
+            window.location.replace("respostaErrada.html");
+        }
+    }
+    </script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Show do Provão</title>
+</head>
+<body>
+    <img src="Show do Provão logo.png" alt="logo">
+    <h1>4ª Pergunta:</h1>
+    <div class="question">
+        <p>Qual foi o impacto do Ato Adicional de 1834 na relação entre as províncias e o governo central?</p>
+        <div class="option">
+            <label>
+                <input type="radio" name="resposta4" value="a">
+                -
+            </label><br>
+            <label>
+                <input type="radio" name="resposta4" value="b">
+                -
+            </label><br>
+            <label>
+                <input type="radio" name="resposta4" value="c">
+                -
+            </label><br>
+            <label>
+                <input type="radio" name="resposta4" value="d">
+                -
+            </label>
+        </div>
+    <br>
+</div>
+    <div class="result-message" id="resultMessage4" style="display: none;"></div>
+    <div class="submit-btn">
+        <button class="botao" type="submit" onclick="checkAnswer()">Enviar</button></a>
+    </div>
+
+    <script>
+    function checkAnswer(){
+        var answer4 = document.querySelector('input[name="resposta4"]:checked');
+        var resultMessage4 = document.getElementById('resultMessage4');
+        var resposta4 = document.getElementById('resposta4');
+        if (answer4 && answer4.value==="x"){
+            resultMessage4.style.display="block";
+            window.location.replace("respostaCerta.html");
+        } else{
+            resultMessage4.style.display="block";
+            window.location.replace("respostaErrada.html");
+        }
+    }
+    </script>
+</body>
+</html>
