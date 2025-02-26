@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Show do Provão</title>
+</head>
+<body>
+    <img src="Show do Provão logo.png" alt="logo">
+    <h1>3ª Pergunta:</h1>
+    <div class="question">
+        <p>Como as disputas políticas entre os grupos do Brasil durante o Período Regencial influenciaram a eclosão da Sabinada?</p>
+        <div class="option">
+            <label>
+                <input type="radio" name="resposta3" value="a">
+                -
+            </label><br>
+            <label>
+                <input type="radio" name="resposta3" value="b">
+                -
+            </label><br>
+            <label>
+                <input type="radio" name="resposta3" value="c">
+                -
+            </label><br>
+            <label>
+                <input type="radio" name="resposta3" value="d">
+                -
+            </label>
+        </div>
+    <br>
+</div>
+    <div class="result-message" id="resultMessage3" style="display: none;"></div>
+    <div class="submit-btn">
+        <button class="botao" type="submit" onclick="checkAnswer()">Enviar</button></a>
+    </div>
+
+    <script>
+    function checkAnswer(){
+        var answer3 = document.querySelector('input[name="resposta3"]:checked');
+        var resultMessage3 = document.getElementById('resultMessage3');
+        var resposta3 = document.getElementById('resposta3');
+        if (answer3 && answer3.value==="x"){
+            resultMessage3.style.display="block";
+            window.location.replace("respostaCerta.html");
+        } else{
+            resultMessage3.style.display="block";
+            window.location.replace("respostaErrada.html");
+        }
+    }
+    </script>
+</body>
+</html>

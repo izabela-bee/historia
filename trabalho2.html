@@ -8,44 +8,44 @@
 </head>
 <body>
     <img src="Show do Provão logo.png" alt="logo">
-    <h1>1ª Pergunta:</h1>
+    <h1>2ª Pergunta:</h1>
     <div class="question">
-        <p> Em que período da história a revolta Sabinada se passou?</p>
+        <p>O que motivou a Sabinada, além das questões políticas?</p>
         <div class="option">
             <label>
-                <input type="radio" name="resposta1" value="a">
-                1º Reinado
+                <input type="radio" name="resposta2" value="a">
+                -
             </label><br>
             <label>
-                <input type="radio" name="resposta1" value="b">
-                Brasil Império
+                <input type="radio" name="resposta2" value="b">
+                -
             </label><br>
             <label>
-                <input type="radio" name="resposta1" value="c">
-                Período Regencial
+                <input type="radio" name="resposta2" value="c">
+                -
             </label><br>
             <label>
-                <input type="radio" name="resposta1" value="d">
-                2º Reinado
+                <input type="radio" name="resposta2" value="d">
+                -
             </label>
         </div>
     <br>
 </div>
-    <div class="result-message" id="resultMessage1" style="display: none;"></div>
+    <div class="result-message" id="resultMessage2" style="display: none;"></div>
     <div class="submit-btn">
         <button class="botao" type="submit" onclick="checkAnswer()">Enviar</button></a>
     </div>
 
     <script>
     function checkAnswer(){
-        var answer1 = document.querySelector('input[name="resposta1"]:checked');
-        var resultMessage1 = document.getElementById('resultMessage1');
-        var resposta1 = document.getElementById('resposta1');
-        if (answer1 && answer1.value==="c"){
-            resultMessage1.style.display="block";
+        var answer2 = document.querySelector('input[name="resposta2"]:checked');
+        var resultMessage2 = document.getElementById('resultMessage2');
+        var resposta2 = document.getElementById('resposta2');
+        if (answer2 && answer2.value==="x"){
+            resultMessage2.style.display="block";
             window.location.replace("respostaCerta.html");
         } else{
-            resultMessage1.style.display="block";
+            resultMessage2.style.display="block";
             window.location.replace("respostaErrada.html");
         }
     }

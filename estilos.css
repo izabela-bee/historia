@@ -7,6 +7,7 @@ h1{
     background-color: white;
     border-radius: 5px;
     border: solid black 3px;
+    text-align: center;
 }
 p{
     color: rgb(0, 0, 0);
@@ -31,4 +32,10 @@ p{
 
 .submit-btn{
     justify-self: center;
+}
+
+img{
+    margin-left: 45%;
+    width: 150px;
+    height: 150px;
 }
