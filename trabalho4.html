@@ -18,19 +18,11 @@
         <div class="option">
             <label>
                 <input type="radio" name="resposta4" value="a">
-                -
+                As províncias ganharam autonomia sobre o governo central
             </label><br>
             <label>
                 <input type="radio" name="resposta4" value="b">
-                -
-            </label><br>
-            <label>
-                <input type="radio" name="resposta4" value="c">
-                -
-            </label><br>
-            <label>
-                <input type="radio" name="resposta4" value="d">
-                -
+                As províncias perderam autonomia para o governo central
             </label>
         </div>
     <br>
@@ -67,7 +59,7 @@
         var answer4 = document.querySelector('input[name="resposta4"]:checked');
         var resultMessage4 = document.getElementById('resultMessage4');
         var resposta4 = document.getElementById('resposta4');
-        if (answer4 && answer4.value==="x"){
+        if (answer4 && answer4.value==="a"){
             resultMessage4.style.display="block";
             window.location.replace("respostaCerta.html");
         } else{
