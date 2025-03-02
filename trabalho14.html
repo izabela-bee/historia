@@ -7,6 +7,10 @@
     <title>Show do Provão</title>
 </head>
 <body>
+    <div class="contador">
+		Contador: 
+    	<span id="contador"></span>
+	</div>
     <img src="Show do Provão logo.png" alt="logo">
     <h1>14ª Pergunta:</h1>
     <div class="question">
@@ -37,6 +41,28 @@
     </div>
 
     <script>
+        const som_inicioJogo = new Audio();
+        som_inicioJogo.src = './som/inicio.mp3';
+        const som_pensar = new Audio();
+        som_pensar.src = './som/pensar.mp3';
+        function play() { 
+        som_inicioJogo.play();
+    }
+        function play1(){
+            som_pensar.play();
+        }
+    function move(evento){
+        if (evento.key == ' '){
+            play();
+        }
+        if (evento.key == '.'){
+            play1();
+        }
+    }
+    window.addEventListener('keydown',move);
+        let elemento = document.querySelector('#contador');
+		let contador = 1;
+		setInterval(() => elemento.innerHTML = contador++, 1000);
     function checkAnswer(){
         var answer14 = document.querySelector('input[name="resposta14"]:checked');
         var resultMessage14 = document.getElementById('resultMessage14');

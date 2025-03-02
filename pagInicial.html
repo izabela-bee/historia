@@ -3,8 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilos.css">
-    <script src="trabHist.js"></script>
     <title>Show do Provão</title>
 </head>
 <body>
@@ -38,6 +36,20 @@
             background-color: gray;
         }
     </style>
+    <script>
+        const som_inicio = new Audio();
+        som_inicio.src = './som/somInicial.mp3';
+        function play() { 
+            som_inicio.play();
+        }
+        function move(evento){
+            if (evento.key == ' '){
+                play();
+            }
+        }
+        window.addEventListener('keydown',move);
+        </script>
+        
     <div class="geral" style="display: flex; flex-direction: row;">
         <div class="imagem">
             <img src="Show do Provão logo.png" alt="logo">

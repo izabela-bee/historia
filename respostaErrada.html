@@ -29,6 +29,20 @@
             cursor: pointer;
         }
     </style>
+    <script>
+        const som_errada = new Audio();
+        som_errada.src = './som/errada.mp3';
+        function play() { 
+            som_errada.play();
+        }
+        function move(evento){
+            if (evento.key == ' '){
+                play();
+            }
+        }
+        window.addEventListener('keydown',move);
+        </script>
+        
     <h1>RESPOSTA ERRADA</h1>
     <br>
     <h3 class="perguntas">Ir para:</h3>

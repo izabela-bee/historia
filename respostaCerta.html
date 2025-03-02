@@ -29,6 +29,20 @@
             cursor: pointer;
         }
     </style>
+    <script>
+    const som_certa = new Audio();
+    som_certa.src = './som/certa.mp3';
+    function play() { 
+        som_certa.play();
+    }
+    function move(evento){
+        if (evento.key == ' '){
+            play();
+        }
+    }
+    window.addEventListener('keydown',move);
+    </script>
+    
     <h1>RESPOSTA CERTA</h1>
     <br>
     <h3 class="perguntas">Ir para:</h3>
