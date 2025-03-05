@@ -18,20 +18,19 @@
         <div class="option">
             <label>
                 <input type="radio" name="resposta5" value="a">
-                -
+                O enfraqueceimento da economia açucareira fortaleceu a manufatura da Bahia, tornando ela uma das províncias mais ricas do país
             </label><br>
             <label>
                 <input type="radio" name="resposta5" value="b">
-                -
+                Levou a elite baiana a se aproximar do governo central, buscando maior controle sobre produção de açúcar e evitando conflitos com a coroa
             </label><br>
             <label>
                 <input type="radio" name="resposta5" value="c">
-                -
+                Fez com que as camadas populares e as elites se juntassem pela manutenção das fazendas de açúcar e pelo trabalho assalariado
             </label><br>
             <label>
                 <input type="radio" name="resposta5" value="d">
-                -
-            </label>
+                Acentuou a necessidade de mudanças no modelo econo-político que dificultava a melhoria de vida por parte das populações mais pobres            </label>
         </div>
     <br>
 </div>
@@ -67,7 +66,7 @@
         var answer5 = document.querySelector('input[name="resposta5"]:checked');
         var resultMessage5 = document.getElementById('resultMessage5');
         var resposta5 = document.getElementById('resposta5');
-        if (answer5 && answer5.value==="x"){
+        if (answer5 && answer5.value==="d"){
             resultMessage5.style.display="block";
             window.location.replace("respostaCerta.html");
         } else{

@@ -18,19 +18,19 @@
         <div class="option">
             <label>
                 <input type="radio" name="resposta2" value="a">
-                -
+                Foi motivada por competição com outros estados do nordeste pela produção de café
             </label><br>
             <label>
                 <input type="radio" name="resposta2" value="b">
-                -
+                Ocorreu pois os líderes bainos queriam que a Bahia fosse inpendente sob domínio português
             </label><br>
             <label>
                 <input type="radio" name="resposta2" value="c">
-                -
-            </label><br>
+                A insatifação com a decadência do açúcar e falta de ascenção social das classes populares
+           </label><br>
             <label>
                 <input type="radio" name="resposta2" value="d">
-                -
+                A causa da Sabiana foi pela disputa religiosa entre católicos e muçulmanos baianos
             </label>
         </div>
     <br>
@@ -67,7 +67,7 @@
         var answer2 = document.querySelector('input[name="resposta2"]:checked');
         var resultMessage2 = document.getElementById('resultMessage2');
         var resposta2 = document.getElementById('resposta2');
-        if (answer2 && answer2.value==="x"){
+        if (answer2 && answer2.value==="c"){
             resultMessage2.style.display="block";
             window.location.replace("respostaCerta.html");
         } else{

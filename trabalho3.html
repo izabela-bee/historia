@@ -18,19 +18,18 @@
         <div class="option">
             <label>
                 <input type="radio" name="resposta3" value="a">
-                -
-            </label><br>
+                A falta representação das camadas populares no governo central fez com que o povo aderisse as revoltas organizadas            </label><br>
             <label>
                 <input type="radio" name="resposta3" value="b">
-                -
+                Foi motivada pela descoberta de ouro na Bahia que gerou disputa entre os moradores locais e portugueses
             </label><br>
             <label>
                 <input type="radio" name="resposta3" value="c">
-                -
+                A revolução francesa foi usada de inspiração principal pelas camadas mais baixas para as reivindicações de seus poderes
             </label><br>
             <label>
                 <input type="radio" name="resposta3" value="d">
-                -
+                Foi gerada pela reação contraria dos ricos com o fim da escravidão, pois traria prejuizo a economia da província
             </label>
         </div>
     <br>
@@ -67,7 +66,7 @@
         var answer3 = document.querySelector('input[name="resposta3"]:checked');
         var resultMessage3 = document.getElementById('resultMessage3');
         var resposta3 = document.getElementById('resposta3');
-        if (answer3 && answer3.value==="x"){
+        if (answer3 && answer3.value==="a"){
             resultMessage3.style.display="block";
             window.location.replace("respostaCerta.html");
         } else{
