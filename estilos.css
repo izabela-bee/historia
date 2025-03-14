@@ -1,5 +1,7 @@
 body{
     background-color: darkblue;
+    background-image: url(fundo.png);
+    background-size: cover;
 }
 
 h1{
@@ -8,6 +10,7 @@ h1{
     border-radius: 5px;
     border: solid black 3px;
     text-align: center;
+    padding: 20px;
 }
 p{
     color: rgb(0, 0, 0);
