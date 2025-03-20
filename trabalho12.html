@@ -18,19 +18,19 @@
         <div class="option">
             <label>
                 <input type="radio" name="resposta12" value="a">
-                -
+                Sugerem que os líderes da Sabinada defendiam maior poder para o governo central.
             </label><br>
             <label>
                 <input type="radio" name="resposta12" value="b">
-                -
+                Mostram que o movimento foi incentivado pelo Império para fortalecer a monarquia na Bahia.
             </label><br>
             <label>
                 <input type="radio" name="resposta12" value="c">
-                -
+                Mostra que a revolta era composta principalmente por elites locais e classe medias, além de tinham como objetivo buscar autonomia política para a Bahia.
             </label><br>
             <label>
                 <input type="radio" name="resposta12" value="d">
-                -
+                Indicam que a revolta era liderada exclusivamente por camponeses e escravizados.
             </label>
         </div>
     <br>
@@ -67,7 +67,7 @@
         var answer12 = document.querySelector('input[name="resposta12"]:checked');
         var resultMessage12 = document.getElementById('resultMessage12');
         var resposta12 = document.getElementById('resposta12');
-        if (answer12 && answer12.value==="x"){
+        if (answer12 && answer12.value==="c"){
             resultMessage12.style.display="block";
             window.location.replace("respostaCerta.html");
         } else{
