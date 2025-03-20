@@ -18,19 +18,19 @@
         <div class="option">
             <label>
                 <input type="radio" name="resposta14" value="a">
-                -
+                O governo imperial não reconheceu o movimento e enviou tropas para reprimir a revolta.
             </label><br>
             <label>
                 <input type="radio" name="resposta14" value="b">
-                -
+                O governo central apoiou secretamente os revoltosos para enfraquecer a elite baiana.
             </label><br>
             <label>
                 <input type="radio" name="resposta14" value="c">
-                -
+                O governo imperial decidiu não intervir, permitindo que a Sabinada se espalhasse para outras províncias.
             </label><br>
             <label>
                 <input type="radio" name="resposta14" value="d">
-                -
+                O governo central reconheceu a revolta como legítima e concedeu independência à Bahia.
             </label>
         </div>
     <br>
@@ -67,7 +67,7 @@
         var answer14 = document.querySelector('input[name="resposta14"]:checked');
         var resultMessage14 = document.getElementById('resultMessage14');
         var resposta14 = document.getElementById('resposta14');
-        if (answer14 && answer14.value==="x"){
+        if (answer14 && answer14.value==="a"){
             resultMessage14.style.display="block";
             window.location.replace("respostaCerta.html");
         } else{
