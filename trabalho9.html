@@ -14,23 +14,23 @@
     <img src="Show do Provão logo.png" alt="logo">
     <h1>9ª Pergunta:</h1>
     <div class="question">
-        <p>Qual foi a postura dos líderes da Sabinada em relação à escravidão?</p>
+        <p>Qual foi a postura dos líderes da Sabinada em relação à escravização?</p>
         <div class="option">
             <label>
                 <input type="radio" name="resposta9" value="a">
-                -
+                 Eram ferrenhos abolicionistas.
             </label><br>
             <label>
                 <input type="radio" name="resposta9" value="b">
-                -
+                Defenderam a substituição da mão de obra escravizada por trabalhadores assalariados.
             </label><br>
             <label>
                 <input type="radio" name="resposta9" value="c">
-                -
+                Buscaram o apoio dos escravizados, garantindo-lhes direitos políticos e sociais.
             </label><br>
             <label>
                 <input type="radio" name="resposta9" value="d">
-                -
+                Não tinham a intenção de lutar pelo fim da escravização
             </label>
         </div>
     <br>
@@ -67,7 +67,7 @@
         var answer9 = document.querySelector('input[name="resposta9"]:checked');
         var resultMessage9 = document.getElementById('resultMessage9');
         var resposta9 = document.getElementById('resposta9');
-        if (answer9 && answer9.value==="x"){
+        if (answer9 && answer9.value==="d"){
             resultMessage9.style.display="block";
             window.location.replace("respostaCerta.html");
         } else{
