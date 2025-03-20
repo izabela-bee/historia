@@ -18,19 +18,19 @@
         <div class="option">
             <label>
                 <input type="radio" name="resposta10" value="a">
-                -
+                Enfatiza que apesar de lutarem por liberdade política , não questionavam a escravidão.
             </label><br>
             <label>
                 <input type="radio" name="resposta10" value="b">
-                -
+                Indica que a Sabinada foi a única revolta que não incluiu pautas abolicionistas em suas reivindicações.
             </label><br>
             <label>
                 <input type="radio" name="resposta10" value="c">
-                -
+                Demonstra que todos os movimentos de contestação do século XIX eram contrários à escravidão.
             </label><br>
             <label>
                 <input type="radio" name="resposta10" value="d">
-                -
+                Revela que os líderes da Sabinada defendiam a manutenção da escravidão como base do sistema econômico.
             </label>
         </div>
     <br>
@@ -67,7 +67,7 @@
         var answer10 = document.querySelector('input[name="resposta10"]:checked');
         var resultMessage10 = document.getElementById('resultMessage10');
         var resposta10 = document.getElementById('resposta10');
-        if (answer10 && answer10.value==="x"){
+        if (answer10 && answer10.value==="a"){
             resultMessage10.style.display="block";
             window.location.replace("respostaCerta.html");
         } else{
